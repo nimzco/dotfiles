@@ -1,0 +1,15 @@
+{
+	"dialog": false,
+	"growl_active": true,
+	"machine_name":
+	{
+		"220083054790299": "Kristan Atkin",
+		"251575820096645": "Jong Delmonte"
+	},
+	"notify_send_active": true,
+	"notify_send_path": "/usr/bin/notify-send",
+	"pushover_active": false,
+	"pushover_user_id": "",
+	"user_id": "0bed1e197cf2076940ee2642a4c2bd5a9640f149",
+	"user_token": "33e52fcc304dbd188c7be0e20eafb621486bee56"
+}

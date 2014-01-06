@@ -1,0 +1,16 @@
+<snippet>
+  <!-- Example: Hello, ${1:this} is a ${2:snippet}. -->
+  <content><![CDATA[
+  def to_many_through(first, second)
+    items = send(first).collect { |item| item.send(second) }.flatten!
+    # flatten! returns nil on []
+    items ||= []
+    items.uniq
+  end
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>derp</tabTrigger>
+  <description></description>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.ruby</scope>
+</snippet>

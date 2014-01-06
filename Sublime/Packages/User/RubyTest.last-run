@@ -1,0 +1,4 @@
+{
+	"last_test_run": "bundle exec rspec spec/controllers/agendas/events_controller_spec.rb",
+	"last_test_working_dir": "/Users/nico/Development/Orthoplus"
+}
