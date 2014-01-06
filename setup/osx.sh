@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # ~/.osx — inspired by <http://mths.be/osx>
 

@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Install brew-cask
 brew tap phinze/homebrew-cask
