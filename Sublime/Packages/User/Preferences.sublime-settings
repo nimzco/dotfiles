@@ -93,5 +93,6 @@
 	"trim_trailing_white_space_on_save": true,
 	"use_indent_to_bracket": true,
 	"use_simple_full_screen": true,
-	"word_warp": true
+	"word_warp": true,
+	"show_tab_close_buttons": false
 }
