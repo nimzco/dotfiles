@@ -1,3 +1,7 @@
+[user]
+	name = Nima Izadi
+	email = nim.izadi@gmail.com
+
 [alias]
 	co = checkout
 
@@ -12,6 +16,13 @@
 
 	# Delete a branch both locally and remotely
 	drop = !"git branch -D $1; git push origin --delete"
+
+	st		= status
+	br		= branch
+	hist	= log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	type	= cat-file -t
+	dump	= cat-file -p
+	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit --date=relative --all
 
 [apply]
 	# Detect whitespace errors when applying a patch
@@ -31,19 +42,23 @@
 [color]
 	# Use colors in Git commands that are capable of colored output when
 	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+	branch		= auto
+	diff		= auto
+	interactive	= auto
+	status		= auto
 	ui = auto
 [color "branch"]
-	current = yellow reverse
-	local = yellow
-	remote = green
+	current  = green reverse
+	local    = green
+	remote   = yellow
 [color "diff"]
 	meta = yellow bold
 	frag = magenta bold
-	old = red bold
-	new = green bold
+	old  = red bold
+	new  = green bold
 [color "status"]
-	added = yellow
-	changed = green
+	added     = green
+	changed   = yellow
 	untracked = cyan
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
@@ -65,3 +80,6 @@
 
 [push]
 	default = current
+
+[core]
+	excludesfile = /Users/Nima/.gitignore

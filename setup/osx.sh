@@ -13,10 +13,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ###############################################################################
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "MBPr-Nico"
-sudo scutil --set HostName "MBPr-Nico"
-sudo scutil --set LocalHostName "MBPr-Nico"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MBPr-Nico"
+sudo scutil --set ComputerName "MBP-Nima"
+sudo scutil --set HostName "MBPr-Nima"
+sudo scutil --set LocalHostName "MBPr-Nima"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MBPr-Nima"
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" " # DOES NOT WORK
@@ -169,8 +169,8 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Finder: show hidden files by default
-defaults write com.apple.finder AppleShowAllFiles -bool true
+# Finder: hide hidden files by default
+defaults write com.apple.finder AppleShowAllFiles -bool false
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
@@ -325,11 +325,11 @@ defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner → Desktop
 defaults write com.apple.dock wvous-tr-corner -int 4
 defaults write com.apple.dock wvous-tr-modifier -int 0
-# Bottom left screen corner → Start screen saver
-defaults write com.apple.dock wvous-bl-corner -int 0
+# Bottom left screen corner → Show application window
+defaults write com.apple.dock wvous-bl-corner -int 3
 defaults write com.apple.dock wvous-bl-modifier -int 0
-# Bottom left screen corner → Start screen saver
-defaults write com.apple.dock wvous-br-corner -int 2
+# Bottom right screen corner → Dashboard
+defaults write com.apple.dock wvous-br-corner -int 7
 defaults write com.apple.dock wvous-br-modifier -int 0
 
 ###############################################################################
@@ -384,7 +384,7 @@ defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 ###############################################################################
 
 # Hide Spotlight tray-icon (and subsequent helper)
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
