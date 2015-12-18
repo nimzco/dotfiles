@@ -58,15 +58,20 @@
         "node_modules"
     ],
     "font_face": "Inconsolata",
-    "font_size": 20,
+    "font_size": 13,
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "ignored_packages":
     [
-        "Theme - Phoenix",
-        "Vintage",
+        "CoffeeScript",
+        "Git Status Files",
         "Markdown",
-        "Tomorrow Color Schemes"
+        "Puppet Syntax checking",
+        "SplitScreen",
+        "Tau Time Tracker",
+        "Theme - Phoenix",
+        "Tomorrow Color Schemes",
+        "Vintage"
     ],
     "indent_to_bracket": true,
     "keymaps":
@@ -90,8 +95,9 @@
     "spell_check": false,
     "tab_completion": false,
     "tab_size": 4,
-    "theme": "Flatland Dark.sublime-theme",
+    "theme": "Brogrammer.sublime-theme",
     "tidytabs_threshold": 10,
+    "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "use_indent_to_bracket": true,
     "use_simple_full_screen": true,
