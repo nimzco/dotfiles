@@ -32,7 +32,10 @@ The shorter way of doing this is:
 `git clone https://github.com/s-a/sublime-text-refactor.git ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/sublime-text-refactor`
 
 #### Windows
-`git clone https://github.com/s-a/sublime-text-refactor.git %APPDATA%\Sublime Text 2\Packages\sublime-text-refactor`
+In an elevated command prompt or powershell (as Admin):
+`git clone https://github.com/s-a/sublime-text-refactor.git "%APPDATA%\Sublime Text 2\Packages\sublime-text-refactor`"
+for Sublime Text 3:
+`git clone https://github.com/s-a/sublime-text-refactor.git "%APPDATA%\Sublime Text 3\Packages\sublime-text-refactor`"
 
 
 Dependencies
@@ -47,7 +50,7 @@ Usage
 Select a keyword via double click or point the cursor to the keyword and choose "Goto Definition" from context menu.
 
 ***Rename:***  
-Select a keyword via double click or point the cursor to the keyword and choose "Rename" from context menu. The plugin will select all variables or function calls occurring in the source code including its declaration. After that you rename them all on the fly. The logic respects the variables or functions scope. So it should be save to rename them all without thinking ;) .
+Select a keyword via double click or point the cursor to the keyword and choose "Rename" from context menu. The plugin will select all variables or function calls occurring in the source code including its declaration. After that you rename them all on the fly. The logic respects the variables or functions scope. So it should be safe to rename them all without thinking ;) .
 
 ***Introduce Variable:***  
 Select an Expression from source code or point the cursor to the desired position and choose "Introduce Variable" from context menu. 
@@ -55,7 +58,7 @@ Select an Expression from source code or point the cursor to the desired positio
 ***Extract Method:***  
 Select the source code you want to extract into a new method and choose "Refactor / Extract methode" from context menu. 
 This will extract the source code instantly to a new methode aka function. The plugin will manage undeclared variable usages and pass them within a single bundled JSON parameter to the new function.
-It als generates a sample function call at the bottom of the new methode.
+It also generates a sample function call at the bottom of the new methode.
 The plugin marks all variables occurring in the source code so you can rename them on the fly. 
 
 

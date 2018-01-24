@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+
+        <key>name</key>
+        <string>Capo-Dark</string>
+        <key>settings</key>
+
+        <array>
+
+            <dict>
+                <key>settings</key>
+                <dict>
+					<key>tagsForeground</key>
+					<string>#FF0000</string>
+					<key>tagsOptions</key>
+					<string>underline</string>
+                    <key>background</key>
+                    <string>#292d35</string>
+                    <key>caret</key>
+                    <string>#925a62</string>
+                    <key>foreground</key>
+                    <string>#999e9f</string>
+                    <key>invisibles</key>
+                    <string>#4B4E55</string>
+                    <key>lineHighlight</key>
+                    <string>#171717</string>
+                    <key>selection</key>
+                    <string>#171717</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>scope</key>
+                <string>comment, meta.tag</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#6a6a6a</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>scope</key>
+                <string>keyword, storage, constant, support.constant, meta.property-value, entity.name.tag, keyword.other.unit.css</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#7e6f94</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>scope</key>
+                <string>variable, entity.other.attribute-name, support.other.namespace, support.class, support.type.property-name, meta.property-name, meta.instance.constructor</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#7587a6</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>scope</key>
+                <string>variable.other.property, meta.property.object</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#7587a6</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>scope</key>
+                <string>keyword.operator, punctuation.separator, meta.group.braces.round.function.arguments</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#999e9f</string>
+                </dict>
+            </dict>    
+
+            <dict>
+                <key>scope</key>
+                <string>meta.separator, invalid</string>
+                <key>settings</key>
+                <dict>
+                    <key>background</key>
+                    <string>#af1212</string>
+                    <key>foreground</key>
+                    <string>#999e9f</string>
+                </dict>
+            </dict>                    
+
+            <dict>
+                <key>scope</key>
+                <string>entity.other.attribute-name.class, entity.name.tag.css, keyword.other, string.quoted.double, string.quoted.single, punctuation.definition.string, entity.other.attribute-name.id</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#b0686f</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>scope</key>
+                <string>variable.function, entity.name.function, meta.function-call</string>
+                <key>settings</key>
+                <dict>
+                    <key>foreground</key>
+                    <string>#869c78</string>
+                </dict>
+            </dict>
+
+            <dict>
+                <key>scope</key>
+                <string>support.function</string>
+                <key>settings</key>
+                <dict>
+                    <key>background</key>
+                    <string>#23262d</string>
+                    <key>foreground</key>
+                    <string>#869c78</string>
+                </dict>
+            </dict>
+
+        <dict>
+            <key>name</key>
+            <string>SublimeLinter Error</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.error</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#D02000</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Gutter Mark</string>
+            <key>scope</key>
+            <string>sublimelinter.gutter-mark</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#FFFFFF</string>
+            </dict>
+        </dict><dict>
+            <key>name</key>
+            <string>SublimeLinter Warning</string>
+            <key>scope</key>
+            <string>sublimelinter.mark.warning</string>
+            <key>settings</key>
+            <dict>
+                <key>foreground</key>
+                <string>#DDB700</string>
+            </dict>
+        </dict></array>
+
+    </dict>
+</plist>

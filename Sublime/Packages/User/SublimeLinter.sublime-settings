@@ -1,16 +1,26 @@
 {
 	"user":
 	{
-		"debug": false,
+		"debug": true,
 		"delay": 0.25,
 		"error_color": "D02000",
-		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Default/Default.gutter-theme",
+		"gutter_theme": "Packages/SublimeLinter/gutter-themes/Koloria/Koloria.gutter-theme",
 		"gutter_theme_excludes":
 		[
 		],
-		"lint_mode": "save only",
+		"lint_mode": "background",
 		"linters":
 		{
+			"eslint":
+			{
+				"@disable": false,
+				"args":
+				[
+				],
+				"excludes":
+				[
+				]
+			},
 			"rubocop":
 			{
 				"@disable": false,
@@ -22,8 +32,9 @@
 				]
 			}
 		},
-		"mark_style": "fill",
+		"mark_style": "solid underline",
 		"no_column_highlights_line": false,
+		"passive_warnings": false,
 		"paths":
 		{
 			"linux":
@@ -31,6 +42,7 @@
 			],
 			"osx":
 			[
+				"/Users/NimaIzadi/.nvm/versions/node/v6.10.0/bin"
 			],
 			"windows":
 			[
@@ -60,6 +72,13 @@
 			"php": "html",
 			"python django": "python"
 		},
+		"tooltip_fontsize": "1rem",
+		"tooltip_theme": "Packages/SublimeLinter/tooltip-themes/Default/Default.tooltip-theme",
+		"tooltip_theme_excludes":
+		[
+		],
+		"tooltips": true,
+		"use_current_shell_path": false,
 		"warning_color": "DDB700",
 		"wrap_find": true
 	}

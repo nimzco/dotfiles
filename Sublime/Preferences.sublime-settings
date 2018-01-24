@@ -2,8 +2,8 @@
     "bold_folder_labels": true,
     "caret_style": "phase",
     "close_windows_when_empty": true,
-    "color_scheme": "Packages/User/Flatland Dark (SL).tmTheme",
-    "draw_white_space": "all",
+    "color_scheme": "Packages/User/SublimeLinter/Flatland_Monokai (SL).tmTheme",
+    "draw_white_space": "selection",
     "ensure_newline_at_eof_on_save": true,
     "fade_fold_buttons": false,
     "file_exclude_patterns":
@@ -40,9 +40,11 @@
     "fold_buttons": true,
     "folder_exclude_patterns":
     [
+        "reports",
         "doc/app",
         "doc/javascript",
         ".zeus.sock",
+        ".cypress",
         ".git",
         ".svn",
         ".hg",
@@ -58,12 +60,13 @@
         "node_modules"
     ],
     "font_face": "Inconsolata",
-    "font_size": 13,
+    "font_size": 16,
     "highlight_line": true,
     "highlight_modified_tabs": true,
     "ignored_packages":
     [
         "CoffeeScript",
+        "Cucumber",
         "Git Status Files",
         "Markdown",
         "Puppet Syntax checking",
@@ -94,8 +97,8 @@
     "show_tab_close_buttons": false,
     "spell_check": false,
     "tab_completion": false,
-    "tab_size": 4,
-    "theme": "Brogrammer.sublime-theme",
+    "tab_size": 2,
+    "theme": "ayu-dark.sublime-theme",
     "tidytabs_threshold": 10,
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
