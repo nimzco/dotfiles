@@ -1,85 +1,90 @@
 [user]
-	name = Nima Izadi
-	email = nim.izadi@gmail.com
+  name = Nima Izadi
+  email = nim.izadi@gmail.com
 
 [alias]
-	co = checkout
+  co = checkout
 
-	# View abbreviated SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+  # View abbreviated SHA, description, and history graph of the latest 20 commits
+  l = log --pretty=oneline -n 20 --graph --abbrev-commit
 
-	# View the current working tree status using the short format
-	s = status -s
+  # View the current working tree status using the short format
+  s = status -s
 
-	# Pull in remote changes for the current repository and all its submodules
-	p = !"git pull; git submodule foreach git pull origin master"
+  # Pull in remote changes for the current repository and all its submodules
+  p = !"git pull; git submodule foreach git pull origin master"
 
-	# Delete a branch both locally and remotely
-	drop = !"git branch -D $1; git push origin --delete"
+  # Delete a branch both locally and remotely
+  drop = !"git branch -D $1; git push origin --delete"
 
-	st		= status
-	br		= branch
-	hist	= log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
-	type	= cat-file -t
-	dump	= cat-file -p
-	g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit --date=relative --all
-
-[apply]
-	# Detect whitespace errors when applying a patch
-	whitespace = fix
+  st    = status
+  br    = branch
+  hist  = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type  = cat-file -t
+  dump  = cat-file -p
+  g = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%Creset' --abbrev-commit --date=relative --all
+  pf = push --force-with-lease
 
 [core]
-	# Use custom `.gitignore` and `.gitattributes`
-	excludesfile = ~/.gitignore
-	attributesfile = ~/.gitattributes
-	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and
-	# all kinds of trailing whitespace as an error.
-	# [default] trailing-space: looks for spaces at the end of a line
-	# [default] space-before-tab: looks for spaces before tabs at the beginning of
-	# a line
-	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+  # Use custom `.gitignore` and `.gitattributes`
+  excludesfile = ~/.gitignore
+  attributesfile = ~/.gitattributes
+  # Treat spaces before tabs, lines that are indented with 8 or more spaces, and
+  # all kinds of trailing whitespace as an error.
+  # [default] trailing-space: looks for spaces at the end of a line
+  # [default] space-before-tab: looks for spaces before tabs at the beginning of
+  # a line
+  whitespace = space-before-tab,indent-with-non-tab,trailing-space
 
 [color]
-	# Use colors in Git commands that are capable of colored output when
-	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	branch		= auto
-	diff		= auto
-	interactive	= auto
-	status		= auto
-	ui = auto
+  # Use colors in Git commands that are capable of colored output when
+  # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+  branch    = auto
+  diff    = auto
+  interactive  = auto
+  status    = auto
+  ui = auto
 [color "branch"]
-	current  = green reverse
-	local    = green
-	remote   = yellow
+  current  = green reverse
+  local    = green
+  remote   = yellow
 [color "diff"]
-	meta = yellow bold
-	frag = magenta bold
-	old  = red bold
-	new  = green bold
+  meta = yellow bold
+  frag = magenta bold
+  old  = red bold
+  new  = green bold
 [color "status"]
-	added     = green
-	changed   = yellow
-	untracked = cyan
+  added     = green
+  changed   = yellow
+  untracked = cyan
 [merge]
-	# Include summaries of merged commits in newly created merge commit messages
-	log = true
+  # Include summaries of merged commits in newly created merge commit messages
+  log = true
 
 # URL shorthands
 [url "git@github.com:"]
-	insteadOf = "gh:"
-	pushInsteadOf = "github:"
-	pushInsteadOf = "git://github.com/"
+  insteadOf = "gh:"
+  pushInsteadOf = "github:"
+  pushInsteadOf = "git://github.com/"
 [url "git://github.com/"]
-	insteadOf = "github:"
+  insteadOf = "github:"
 [url "git@gist.github.com:"]
-	insteadOf = "gst:"
-	pushInsteadOf = "gist:"
-	pushInsteadOf = "git://gist.github.com/"
+  insteadOf = "gst:"
+  pushInsteadOf = "gist:"
+  pushInsteadOf = "git://gist.github.com/"
 [url "git://gist.github.com/"]
-	insteadOf = "gist:"
+  insteadOf = "gist:"
 
 [push]
-	default = current
+  default = current
 
 [core]
-	excludesfile = /Users/Nima/.gitignore
+  excludesfile = /Users/Nima/.gitignore
+  editor = 'subl' --wait
+
+[filter "lfs"]
+  clean = git-lfs clean %f
+  smudge = git-lfs smudge %f
+  required = true
+[pull]
+	rebase = true
