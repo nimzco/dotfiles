@@ -1,0 +1,54 @@
+{
+  "editor.fontSize": 13,
+  "editor.tabSize": 2,
+  "window.zoomLevel": 1,
+  "window.nativeTabs": true,
+  "editor.fontFamily": "'Fira Code'",
+  "editor.fontLigatures": true,
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
+  "workbench.colorCustomizations": {
+    "sideBar.background": "#283139",
+    "sideBarTitle.foreground": "#68727b",
+    "dropdown.background": "#283139",
+    "tab.inactiveBackground": "#20272d",
+    "tab.activeBackground": "#283139",
+    "editorLineNumber.foreground": "#8c9194",
+    "input.background": "#20272d",
+    "statusBar.background": "#20272d",
+    "editorSuggestWidget.background": "#20272d",
+    "editorSuggestWidget.selectedBackground": "#404c52",
+    "activityBar.background": "#20272d"
+  },
+  "workbench.activityBar.visible": true,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": false,
+  "prettier.printWidth": 100,
+  "markdown.preview.scrollEditorWithPreview": true,
+  "markdown.styles": [
+    "file:///Users/claudericdemers/Library/Application%20Support/Code/User/github-markdown.css"
+  ],
+  "editor.rulers": [80],
+  "search.exclude": {
+    "build/**": true,
+    "**/node_modules": true,
+    "**/bower_components": true
+  },
+  "window.title": "${activeEditorMedium}${separator}${rootName}",
+  "[html]": {
+    "editor.rulers": [120]
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  }
+}
